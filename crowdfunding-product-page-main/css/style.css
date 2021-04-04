@@ -7,8 +7,7 @@
 }
 
 main{
-    background: #fafafa;
-    background: url('../images/image-hero-desktop.jpg') no-repeat top center;
+    background: url('../images/image-hero-desktop.jpg') #fafafa no-repeat top center;
     padding: 0 160px;
 }
 
@@ -36,10 +35,11 @@ li a:hover{
 }
 
 .principal{
-    background: #fff;
-    border-radius : 5px;
+    
+    
     width: 730px;
     margin: 0 auto;
+    
 }
 .apresentacao{
     text-align: center;
@@ -53,12 +53,17 @@ li a:hover{
     font-size: 0.9em;
 }
 .apresentacao h1, .apresentacao h3{
-    padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 
+article{
+    margin-bottom: 25px;
+    background: #fff;
+    padding: 0 50px 25px;
+    border-radius: 5px;
+}
 .logo-mc{
     position:relative;
-    left: 50%;
     top: -27px;
 }
 
@@ -67,5 +72,54 @@ li a:hover{
     border: none;
     color: white;
     padding: 20px 40px;
-    border-radius: 30px;
+    border-radius: 100px;
+    font-weight: 500px;
 }
+
+#bookmark{
+    background: url('../images/icon-bookmark.svg') #f4f4f4 left center no-repeat;
+    color:hsl(0, 0%, 48%);
+    padding-left: 70px;
+}
+
+.botoes{
+    margin-top: 30px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.numeros{
+    display: flex;
+    justify-content: flex-start;
+    
+}
+
+.numeros h2{
+    font-size: 2.2em;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+.numeros p{
+    color: #727272;
+}
+.numeros div{
+    margin-top: 10px;
+    /* padding-right: 95px; */
+    padding: 0 45px 25px 35px;
+    border-right: 1px solid #cccccc;
+}
+.numeros div:first-child{
+    padding-left: 0;
+}
+.numeros div:last-child{
+    border-right: none;
+}
+.border{
+    margin: 10px 0;
+    width: 80%;
+    height: 12px;
+    border: 1px solid #a7a7a7;
+    background: #fafafa;
+    border-radius: 25px;
+}
+.progress-bar{width: 80%; height: 100%; background: hsl(176, 50%, 47%);border-radius: 25px;}
