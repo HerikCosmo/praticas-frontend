@@ -62,12 +62,15 @@ article{
     padding: 0 50px 25px;
     border-radius: 5px;
 }
+article.info{
+    padding-top: 25px;
+}
 .logo-mc{
     position:relative;
     top: -27px;
 }
 
-.apresentacao button{
+button{
     background-color: hsl(176, 50%, 47%);
     border: none;
     color: white;
@@ -111,6 +114,9 @@ article{
 .numeros div:first-child{
     padding-left: 0;
 }
+.numeros div:nth-child(2){
+    padding-right: 100px;
+}
 .numeros div:last-child{
     border-right: none;
 }
@@ -123,3 +129,48 @@ article{
     border-radius: 25px;
 }
 .progress-bar{width: 80%; height: 100%; background: hsl(176, 50%, 47%);border-radius: 25px;}
+
+.info h2{
+    font-size: 1.2em;
+    margin-bottom: 25px;  
+}
+.info p{
+    font-size: 0.9em;
+    color: hsl(0, 0%, 48%);
+    line-height: 1.8;
+    margin: 20px 0;
+}
+.produto{
+    padding: 30px;
+    border: 1px solid hsl(0, 0%, 48%);
+    border-radius: 5px;
+    margin: 20px 0;
+}
+.produto h2{
+    margin-bottom: 10px;
+}
+.produto p {
+    margin: 10px 0;
+}
+.lado-a-lado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+span.left{
+    font-size: 0.9em;
+    color: hsl(0, 0%, 48%);
+    line-height: 1.5em;
+}
+span.number{
+    font-size: 1.7em;
+    font-weight: 700;
+}
+span.preco{
+    font-size: 0.9em;
+    color:hsl(176, 50%, 47%);
+}
+
+.desactived *{
+    color: rgba(0,0,0,0.4);
+}
