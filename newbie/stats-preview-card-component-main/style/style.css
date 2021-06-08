@@ -20,7 +20,7 @@ main{
 }
 .card{
     width: 76vw;
-    height: 55vh;
+    min-height: 360px;
     display: flex;
     background-color: hsl(244, 38%, 16%);
     border-radius: 5px; 
@@ -79,5 +79,73 @@ main{
     font-size: 20px;
     margin-bottom: 8px;
 }
-.attribution { font-size: 11px; text-align: center; position:absolute; bottom: 20px;}
+.attribution { font-size: 11px; text-align: center; position:relative; text-align: center;}
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media only screen and (max-width: 1024px){
+    .card{
+        padding: 0;
+    }
+    .info{
+        width: 50%;
+        padding: 35px;
+        padding-bottom :0;
+    }   
+    .info > p{
+        font-size: 1.1em;
+    }
+
+    .dados > *{
+        font-size: 1.1em;
+    }
+
+    .info > *{
+        margin-bottom: 10px;
+    }
+    .dados{
+        margin: 42px 0;
+        width: 100%;
+    }
+    .dado{
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .card{
+        flex-direction:column-reverse;
+        margin: 0 auto;
+        height: 785px;
+    }
+
+    .bg-image, .image{
+        height: 245px;
+        width: 100%;
+    }
+
+    .info{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dados{
+        flex-direction: column;
+        align-items: center;
+    }
+    .dado{
+        margin-right:0;   
+    }
+
+    .dado:last-child{
+        margin-bottom: 0;
+    }
+    .bg-image{
+        background-position: center top;
+    }
+
+    .attribution{
+        bottom: 0px;
+    }
+}
