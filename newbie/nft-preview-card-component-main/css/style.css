@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%); 
+    --cyan: hsl(178, 100%, 50%);
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--main-bg);
+}
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: var(--card-bg);
+    width: 300px;
+    border-radius: 15px;
+    padding: 25px 20px;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card .title {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--white);
+    margin: 15px 0;
+}
+
+.card .description p{
+    color: var(--soft-blue);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.card .info {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    justify-content: space-between;
+    margin: 18px 0 20px;
+}
+
+.card .info span {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.card .info span img {
+    margin-right: 5px;
+}
+
+.card .info #value {
+    color: var(--cyan);
+}
+.card .info #daysRemaining{
+    color: var(--soft-blue);
+    font-weight: 300;
+}
+
+.card .credits {
+    padding: 10px 0 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+
+.card .credits img {
+    width: 28px;
+    margin-right: 10px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+}
+
+.card .credits p {
+    color: var(--soft-blue);
+    font-size: 14px;
+}
+
+.card .credits p #name {
+    color: var(--white);
+    font-size: 14px;
+}
+.attribution {
+    color: var(--white);
+    position:fixed;
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.attribution p, .attribution a{
+    font-size: 14px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid var(--line);
+}
